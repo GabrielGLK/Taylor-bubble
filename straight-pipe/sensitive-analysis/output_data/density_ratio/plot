@@ -1,0 +1,24 @@
+reset
+set size ratio -1
+unset tics
+unset border
+unset xlabel
+set key at -0.5,7
+p  [-0.6:0.6]'5-16' u 2:($1+0.63) w l lt 2 lw 1 lc rgb 'blue' t 'Density ratio = 5','' u (-$2):($1+0.63) w l lt 2 lw 1 lc rgb 'blue' notitle,\
+'10-16' u 2:($1+0.27) w l lt 1 lw 1 lc rgb 'red' t 'Density ratio = 10','' u (-$2):($1+0.27) w l lt 1 lw 1 lc rgb 'red' notitle,\
+'100-16' u 2:($1+0.02) w l lt 1 lw 1 lc rgb 'green' t 'Density ratio = 100','' u (-$2):($1+0.02) w l lt 1 lw 1 lc rgb 'green' notitle,\
+'500-16' u 2:1 w l lt 1 lw 1 lc rgb 'violet' t 'Density ratio = 500','' u (-$2):1 w l lt 1 lw 1 lc rgb 'violet' notitle,\
+'1000-16' u 2:1 w l lt 3 lw 1 lc rgb 'black' t 'Density ratio = 1000','' u (-$2):1 w l lt 3 lw 1 lc rgb 'black' notitle
+
+reset
+set size square
+set tics in font ',10' 
+set border font ',10'
+set xlabel 't^*' font ',15
+set ylabel 'U^*' font ',15'
+set key right bottom
+p 'out-5' u 1:5 w l lt 2 lw 1 lc rgb 'blue' t 'Density ratio = 5',\
+'out-10' u 1:5 w l lt 2 lw 1 lc rgb 'red' t 'Density ratio = 10',\
+'out-100' u 1:5 w l lt 2 lw 1 lc rgb 'green' t 'Density ratio = 100',\
+'out-500' u 1:5 w l lt 2 lw 1 lc rgb 'violet' t 'Density ratio = 500',\
+'out-1000' u 1:5 w l lt 2 lw 1 lc rgb 'black' t 'Density ratio = 1000'

@@ -1,0 +1,25 @@
+reset
+set size ratio -1
+unset tics
+unset border
+unset xlabel
+set key at -0.5,7
+p  [-0.6:0.6]'10-16' u 2:($1+0.34) w l lt 2 lw 1 lc rgb 'blue' t 'viscosity ratio = 10','' u (-$2):($1+0.34) w l lt 2 lw 1 lc rgb 'blue' notitle,\
+'100-16' u 2:($1+0.05) w l lt 3 lw 1 lc rgb 'black' t 'viscosity ratio = 100','' u (-$2):($1+0.05) w l lt 3 lw 1 lc rgb 'black' notitle,\
+'1000-16' u 2:($1-0.02) w l lt 1 lw 1 lc rgb 'red' t 'viscosity ratio = 1000','' u (-$2):($1-0.02) w l lt 1 lw 1 lc rgb 'red' notitle,\
+'10000-16' u 2:($1+0.005) w l lt 1 lw 1 lc rgb 'green' t 'viscosity ratio = 10000','' u (-$2):($1+0.005) w l lt 1 lw 1 lc rgb 'green' notitle,\
+'100000-16' u 2:1 w l lt 1 lw 1 lc rgb 'violet' t 'viscosity ratio = 100000','' u (-$2):1 w l lt 1 lw 1 lc rgb 'violet' notitle
+
+
+reset
+set size square
+set tics in font ',10' 
+set border font ',10'
+set xlabel 't^*' font ',15
+set ylabel 'U^*' font ',15'
+set key right bottom
+p 'out-10' u 1:5 w l lt 2 lw 1 lc rgb 'blue' t 'Viscosity ratio = 10',\
+'out-100' u 1:5 w l lt 2 lw 1 lc rgb 'black' t 'Viscosity ratio = 100',\
+'out-1000' u 1:5 w l lt 2 lw 1 lc rgb 'red' t 'Viscosity ratio = 1000',\
+'out-10000' u 1:5 w l lt 2 lw 1 lc rgb 'green' t 'Viscosity ratio = 10000',\
+'out-100000' u 1:5 w l lt 2 lw 1 lc rgb 'violet' t 'Viscosity ratio = 100000'

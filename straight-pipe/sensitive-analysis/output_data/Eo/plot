@@ -1,0 +1,57 @@
+reset
+set size ratio -1
+unset tics
+unset border
+unset xlabel
+set key at -0.5,7
+set style line 1 lt 1 lc rgb "red" lw 1 dashtype 1
+set style line 2 lt 2 lc rgb "blue" lw 1 dashtype 2
+set style line 3 lt 3 lc rgb "orange" lw 1 dashtype 3
+set style line 4 lt 4 lc rgb "green" lw 1 dashtype 4
+set style line 5 lt 5 lc rgb "black" lw 1 dashtype 5
+set style line 6 lt 1 lc rgb "red" lw 1 dashtype 5
+set style line 7 lt 2 lc rgb "blue" lw 1 dashtype 4
+set style line 8 lt 3 lc rgb "orange" lw 1 dashtype 3
+set style line 9 lt 4 lc rgb "green" lw 1 dashtype 2
+set style line 10 lt 5 lc rgb "black" lw 1 dashtype 1
+show style line
+p  [-0.6:0.6]'20-16' u 2:($1+1.512) w l ls 2 t 'Eo = 20','' u (-$2):($1+1.512) w l ls 2 notitle,\
+'40-16' u 2:($1+0.59) w l ls 3 t 'Eo = 40','' u (-$2):($1+0.59) w l ls 3 notitle,\
+'60-16' u 2:($1+0.31) w l ls 4 t 'Eo = 60','' u (-$2):($1+0.31) w l ls 4 notitle,\
+'80-16' u 2:($1+0.20) w l ls 5 t 'Eo = 80','' u (-$2):($1+0.20) w l ls 5 notitle,\
+'100-16' u 2:($1+0.13) w l ls 6 t 'Eo = 100','' u (-$2):($1+0.13) w l ls 6 notitle,\
+'200-16' u 2:($1+0.03) w l ls 7 t 'Eo = 200','' u (-$2):($1+0.03) w l ls 7 notitle,\
+'300-16' u 2:($1+0.01) w l ls 8 t 'Eo = 300','' u (-$2):($1+0.01) w l ls 8 notitle,\
+'400-16' u 2:1 w l ls 9 t 'Eo = 400','' u (-$2):1 w l ls 9 notitle,\
+'500-16' u 2:($1-0.002) w l ls 10 t 'Eo = 500','' u (-$2):($1-0.002) w l ls 10 notitle
+
+
+
+reset
+set size square
+set tics in font ',10' 
+set border font ',10'
+set xlabel 't^*' font ',15
+set ylabel 'U^*' font ',15'
+set key right bottom
+set style line 1 lt 1 lc rgb "red" lw 1 dashtype 1
+set style line 2 lt 2 lc rgb "blue" lw 1 dashtype 2
+set style line 3 lt 3 lc rgb "orange" lw 1 dashtype 3
+set style line 4 lt 4 lc rgb "green" lw 1 dashtype 4
+set style line 5 lt 5 lc rgb "black" lw 1 dashtype 5
+set style line 6 lt 1 lc rgb "red" lw 1 dashtype 5
+set style line 7 lt 2 lc rgb "blue" lw 1 dashtype 4
+set style line 8 lt 3 lc rgb "orange" lw 1 dashtype 3
+set style line 9 lt 4 lc rgb "green" lw 1 dashtype 2
+set style line 10 lt 5 lc rgb "black" lw 1 dashtype 1
+show style line
+p 'out-20' u 1:5 w l ls 2 t 'Eo = 20',\
+'out-40' u 1:5 w l ls 3 t 'Eo = 40',\
+'out-60' u 1:5 w l ls 4 t  'Eo = 60',\
+'out-80' u 1:5 w l ls 5 t  'Eo = 80',\
+'out-100' u 1:5 w l ls 6 t  'Eo = 100',\
+'out-200' u 1:5 w l ls 7 t  'Eo = 200',\
+'out-300' u 1:5 w l ls 8 t  'Eo = 300',\
+'out-400' u 1:5 w l ls 9 t  'Eo = 400',\
+'out-500' u 1:5 w l ls 10 t  'Eo = 500'
+
