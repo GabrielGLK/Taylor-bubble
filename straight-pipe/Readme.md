@@ -14,3 +14,4 @@ Repeated instructions I will not write here.
 - [reference.h](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/experiments-simulations/reference.h): reference data from article of Araujo (2012).
 - [particle.h](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/experiments-simulations/particle.h): liquid particle method.
 - [scatter.h](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/experiments-simulations/scatter.h): used in view.h to show liquid trajectory.
+- [reference_compare.py](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/experiments-simulations/python/reference_compare.py): post-processing.
