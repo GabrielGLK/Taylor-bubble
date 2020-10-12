@@ -1,3 +1,5 @@
+Some useful information about Basilisk on Github:
+- [Basislisk introduction](https://github.com/cfbrasz/cfbrasz.github.io/wiki/Basilisk)
 # Taylor-bubble 
 In this repository, we mainly introduce the test cases of an individual Taylor bubble rises through different pipes in stagnant liquid.
 ## Description of physical problem
@@ -6,7 +8,7 @@ This is an interesting [video](https://www.youtube.com/watch?v=HTFylkr018U&ab_ch
 # [Straight pipes](https://github.com/GabrielGLK/Taylor-bubble/tree/main/straight-pipe)
 - [Readme](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/Readme.md): in this section, we did grid independency analysis, sensitivity analysis. In addition, we compare Basilisk simulations with reference data and also compare the experimental results of Chengsi with the present simulations.
 # [Sudden pipes](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden)
-- [Readme]()
+- [Readme](https://github.com/GabrielGLK/Taylor-bubble/blob/main/sudden/Readme.md)
 - [Sudden expansions](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden/expansions)
 - [Sudden contractions](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden/contractions)
 
