@@ -8,7 +8,7 @@ This is an interesting [video](https://www.youtube.com/watch?v=HTFylkr018U&ab_ch
 # [Straight pipes](https://github.com/GabrielGLK/Taylor-bubble/tree/main/straight-pipe)
 - [Readme](https://github.com/GabrielGLK/Taylor-bubble/blob/main/straight-pipe/Readme.md): in this section, we did grid independency analysis, sensitivity analysis. In addition, we compare Basilisk simulations with reference data and also compare the experimental results of Chengsi with the present simulations.
 # [Sudden pipes](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden)
-- [Readme](https://github.com/GabrielGLK/Taylor-bubble/blob/main/sudden/Readme.md)
+- [Readme](https://github.com/GabrielGLK/Taylor-bubble/blob/main/sudden/Readme.md):In experiments, five different expansion ratios are performed, which are 1.73,1.45,1.35,1.24,1.12. The lower pipe diameter is 16.20mm.
 - [Sudden expansions](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden/expansions)
 - [Sudden contractions](https://github.com/GabrielGLK/Taylor-bubble/tree/main/sudden/contractions)
 
